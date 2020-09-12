@@ -1,0 +1,129 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+header{
+	width: 100%;height: 0;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)); background-repeat: no-repeat; background-size: cover;
+}
+nav{
+	width: 100%;
+	height: 15vh;  background-color: black;
+
+	display: flex;justify-content: space-between;
+		align-items: center;
+	text-transform: uppercase;
+
+}
+nav div.logo{
+	width: 25%;
+}
+
+nav div h1{
+
+	display: flex;
+	margin-left: 30px;
+	color: white;
+	text-align: center;
+
+}
+
+
+
+nav div.menu{
+	width: 40%; 
+	display: flex; justify-content: space-around;
+}
+nav div.menu a{
+	width: 25%;
+	text-decoration:none;
+	color:white;
+	font-weight: bold;
+	align-items: center;
+
+}
+
+
+      nav div.menu a:first-child{
+	color:  #00b894;
+     }
+
+
+main{
+	width: 100%;
+	height: 85vh; 
+	
+	display: flex;
+	justify-content: center;background-color: green;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: white;
+}
+
+section h3{
+	font-size: 35px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;	
+}
+section h1{
+	margin: 30px 0 20px 0;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 5px black;
+
+}
+section p{
+	margin: 10px 0 10px 0;
+	font-size: 25px;
+	font-weight: 100; word-spacing: 2px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px black;
+	margin-bottom: 25px;
+
+}
+section a{
+	font-size: 13px;
+	font-weight:100;letter-spacing: 2px;
+	word-spacing: 2px;
+	padding: 12px 30px;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+section a.btn1{
+	background: #fff;
+	color: black;
+}
+.btn1:hover{
+	background: #00b894;
+	color: white;
+}
+section a.btn2{
+	background: #00b894;
+	color: white;
+}
+.btn2:hover{
+	background: #fff;
+	color: black;
+}
+
+
+
+
+
+.change:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+@keyframes changetext{
+	0%{content: "DELHI";}
+	20%{content: "BANGALORE";}
+	40%{content: "MUMBAI";}
+	60%{content: "LADAKH";}
+	80%{content: "GANGES";}
+	100%{content: "THAR";}
+}
+
